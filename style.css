@@ -1,0 +1,162 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+}
+nav{
+    position: fixed;
+    margin: 0;
+    height:70px;
+    background-color: black;
+    width: 100%;
+    margin-bottom:40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav ul{
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin: 0px 50px;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+
+.partesuperior{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+h1{
+    margin-top:110px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+
+.linhadoh1{
+    height: 0px;
+    width: 73px;
+    border: 2px solid #FF7A00;
+    margin-top:20px;
+    background-color: #FF7A00;
+}
+
+.textoresumo{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 39px;
+    width: 706px;
+    height: 48px;
+    margin-bottom: 40px;
+}
+
+.caixaprincipal{
+    height:1008px;
+    margin-left: 20%;
+    margin-right:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    margin-bottom: 40px;
+}
+
+.pessoaesquerda{
+    display: flex;
+    width:600px;
+    height: 180px;
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pessoadireita{
+    display: flex;
+    width:600px;
+    height: 180px;
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto{
+    width: 172px;
+    height: 172px;
+    background: url("https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    border-radius:50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin:28px;
+}
+
+.textosfotos{
+    display: flex;
+    flex-direction:column;
+    width:325px;
+    height:172px;
+}
+
+.textosfotos2{
+    display: flex;
+    flex-direction:column;
+    width:325px;
+    height:172px;
+    align-items: flex-end;
+}
+
+
+
+.titulofoto{
+    margin-top:10px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 33px;
+    width: 290px;
+}
+
+.titulofoto2{
+    margin-top:10px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 33px;
+    width: 290px;
+    text-align: right;
+}
+
+.linha{
+    height: 0px;
+    width: 42px;
+    border: 2px solid #FF7A00;
+    background-color: #FF7A00;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.texto{
+    font-size: 18px;
+    width:321px;
+    text-align:justify;
+}
