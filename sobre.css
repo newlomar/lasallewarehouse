@@ -1,6 +1,7 @@
 body,html{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Segoe UI";
 }
 nav{
@@ -30,11 +31,15 @@ nav ul li{
     list-style: none;
 }
 
+a{
+    text-decoration:none;
+}
 
 .partesuperior{
     display:flex;
     flex-direction:column;
     align-items:center;
+    margin:0;
 }
 
 h1{
@@ -69,9 +74,8 @@ h1{
 }
 
 .caixaprincipal{
-    height:1008px;
-    margin-left: 20%;
-    margin-right:20%;
+    
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +89,7 @@ h1{
     height: 180px;
     margin: 40px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
@@ -95,7 +99,7 @@ h1{
     height: 180px;
     margin: 40px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .foto{
@@ -106,6 +110,17 @@ h1{
     background-size: 100%;
     background-repeat: no-repeat;
     margin:28px;
+}
+
+.fotojp{
+    width: 172px;
+    height: 172px;
+    background: url("fotojoao.jpg");
+    border-radius:50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:28px;
+    
 }
 
 .textosfotos{
@@ -149,7 +164,7 @@ h1{
 .linha{
     height: 0px;
     width: 42px;
-    border: 2px solid #FF7A00;
+    border: 1px solid #FF7A00;
     background-color: #FF7A00;
     margin-top:10px;
     margin-bottom:10px;
@@ -159,4 +174,132 @@ h1{
     font-size: 18px;
     width:321px;
     text-align:justify;
+}
+
+
+footer{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    color: #646464;
+    height:180px;
+    margin-bottom:40px;
+}
+
+footer i{
+    display: inline-block;
+    color: #FF7A00;
+    font-size:1.5em;
+}
+
+footer p{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #646464;
+}
+
+.marca {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 13px;
+    line-height: 13px;
+    color: #646464;
+}
+
+@media only screen and (max-width: 650px){
+    .partesuperior{
+        margin-left:2%;
+    }
+    .textoresumo{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 592px){
+    .partesuperior{
+        margin-left:5%;
+    }
+    .textoresumo{
+        width:90%;
+    }
+    .pessoaesquerda{
+        display:inline;
+        width:45%;
+        height:500px;
+        margin-left:16%;
+        margin-bottom: 20px;
+    }
+
+    .pessoadireita{
+        display:flex;
+        flex-direction:column-reverse;
+        width:45%;
+        height:390px;
+        margin-left:16%;
+    }
+}
+
+
+
+@media only screen and (max-width: 553px){
+    .partesuperior{
+        margin-left:2%;
+    }
+    .textoresumo{
+        width:90%;
+    }
+    .pessoaesquerda{
+        display:inline;
+        width:59%;
+        height:350px;
+        margin-left:16%;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 425px){
+    .partesuperior{
+        margin-left:4%;
+    }
+    .textoresumo{
+        width:90%;
+    }
+
+    .pessoaesquerda{
+        display:inline;
+        width:73%;
+        height:500px;
+        margin-left:20%;
+    }
+
+   
+}
+
+@media only screen and (max-width: 375px){
+    .partesuperior{
+        margin-left:3%;
+    } 
+
+    .textoresumo, .texto{
+        width:90%;
+    }
+
+    .pessoaesquerda{
+        display:inline;
+        width:75%;
+        height:500px;
+        margin-left:20%;
+    }
+
+    nav ul{
+        margin-left:10px;
+    }
+
 }
