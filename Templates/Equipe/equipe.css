@@ -115,7 +115,7 @@ h1{
 .fotojp{
     width: 172px;
     height: 172px;
-    background: url("fotojoao.jpg");
+    background: url("./img/fotojoao.jpg");
     border-radius:50%;
     background-size: cover;
     background-repeat: no-repeat;

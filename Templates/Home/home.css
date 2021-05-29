@@ -1,0 +1,54 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin-top: 16px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav ul{
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin: 0px 50px;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#FFFFFF;
+}
+
+nav ul li a:visited {
+    color:#FFFFFF;
+}
+
+section #img1{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+#img1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/pexels-kaboompics-com-6224.jpg);
+    background-size: cover;
+}
+
+#img2 {
+    margin-top: 100px;
+}
