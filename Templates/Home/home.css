@@ -132,6 +132,7 @@ section p {
 
 article {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 4rem 3rem;
 }
@@ -151,4 +152,31 @@ article + p {
 
 footer > p {
     text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 1em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a i{
+    color: #FF7A00;
+    font-size:1.5em;
 }
