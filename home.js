@@ -30,19 +30,19 @@ function mudarSlideAndRadio(direcao) {
         radio_1.className = 'inactive';
         radio_2.className = 'inactive';
         radio_0.className = 'active';
-        intro.style.backgroundImage = 'linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../Assets/Img/pexels-kaboompics-com-6224.jpg)';
+        intro.style.backgroundImage = 'linear-gradient(deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Assets/Img/desk.png)';
     } 
     if (contagem === 1) {
         radio_0.className = 'inactive';
         radio_2.className = 'inactive';
         radio_1.className= 'active';
-        intro.style.backgroundImage = 'linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../Assets/Img/desk2.png)';
+        intro.style.backgroundImage = 'linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Assets/Img/desk2.png)';
     }
     if (contagem === 2) {
         radio_0.className = 'inactive';
         radio_1.className = 'inactive';
         radio_2.className= 'active';
-        intro.style.backgroundImage = 'linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../Assets/Img/desk3.png)';
+        intro.style.backgroundImage = 'linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Assets/Img/desk3.png)';
     }
 }
 
