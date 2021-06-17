@@ -115,11 +115,23 @@ h1{
 .fotojp{
     width: 172px;
     height: 172px;
-    background: url("./img/fotojoao.jpg");
+    background: url("./Assets/Img/fotojoao.jpg");
     border-radius:50%;
     background-size: cover;
     background-repeat: no-repeat;
     margin:28px;
+    
+}
+
+.fotojs{
+    width: 172px;
+    height: 172px;
+    background: url("./Assets/Img/fotoJuan.png");
+    border-radius:50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:28px;
+  
     
 }
 
