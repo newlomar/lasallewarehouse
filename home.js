@@ -30,7 +30,7 @@ function mudarSlideAndRadio(direcao) {
         radio_1.className = 'inactive';
         radio_2.className = 'inactive';
         radio_0.className = 'active';
-        intro.style.backgroundImage = 'linear-gradient(deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Assets/Img/desk.png)';
+        intro.style.backgroundImage = 'linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Assets/Img/desk.png)';
     } 
     if (contagem === 1) {
         radio_0.className = 'inactive';
