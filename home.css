@@ -142,12 +142,12 @@ header nav ul li a:hover{
     background: transparent;
 }
 
-section h2 {
-    margin: 2em 3rem;
+section .paragraph h2 {
+    margin: 0.5em 3rem 0 3rem;
     width: 7em;
 }
 
-section h2 hr{
+section .paragraph h2 hr{
     margin-left: 0;
     width: 30%;
     height: 2px;
@@ -155,7 +155,7 @@ section h2 hr{
     border: none;
 }
 
-section p {
+section .paragraph p {
     margin-left: 3rem;
     width: 22.5em;
 }
@@ -166,11 +166,19 @@ article {
     margin: 4rem 3rem 3rem 3rem;
 }
 
+section .paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+}
+
 article img {
     width: 22em;
     border-radius: 1em;
     height: auto;
     box-shadow: 1px 1px 10px black;
+    margin: 1em;
 }
 
 article + p {
@@ -221,4 +229,12 @@ footer ul li{
 footer ul li a i{
     color: #FF7A00;
     font-size:1.5em;
+}
+
+
+@media only screen and (max-width: 1270px) {
+    article {
+        flex-direction: column;
+        align-items: center;
+    }
 }
