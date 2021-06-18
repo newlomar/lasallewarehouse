@@ -12,12 +12,14 @@ header {
     display: flex;
     justify-content: flex-end;
     z-index: 2;
+    background: linear-gradient(#000000a3, transparent);
 }
 
 header nav ul{
     display: flex;
     justify-content: flex-end;
     gap: 5em;
+    padding: 10px 35px;
 }
 
 header nav ul:last-child{
@@ -42,7 +44,7 @@ header nav ul li a:visited{
 
 header nav ul li a:hover{
     text-decoration: none;
-    color: #3382c9;
+    color: orange;
 }
 
 #intro {
@@ -51,14 +53,15 @@ header nav ul li a:hover{
     width: 100vw;
     max-width: 100%;
     background-size: cover;
+    background-position: center;
 }
 
 #intro .sobreposta .arrow-left {
     position: absolute;
     top: 48%;
-    left: 8%;
+    left: 5%;
     color: #808080;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 #intro .sobreposta .arrow-left:hover {
@@ -68,9 +71,9 @@ header nav ul li a:hover{
 #intro .sobreposta .arrow-right {
     position: absolute;
     top: 48%;
-    right: 8%;
+    right: 5%;
     color: #808080;
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
 #intro .sobreposta .arrow-right {
@@ -80,11 +83,11 @@ header nav ul li a:hover{
 .sobreposta {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    position: absolute;
     height: 100%;
-    width: 100%;
+    max-height: 100%;
+    min-height: 100%;
 }
 
 .sobreposta_textos {
@@ -95,24 +98,24 @@ header nav ul li a:hover{
 }
 
 .sobreposta_textos h1 {
-    margin-top: 5em;
     font-size: 3em;
     color: #FFFFFF;
 }
 
 .sobreposta_textos p {
-    width: 50%;
+    max-width: 70%;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: #808080;
+    margin: 0;
+    padding: 0 0 50px;
 }
 
 .sobreposta button {
     text-transform: uppercase;
-    margin: 4em;
-    width: 11em;
-    height: 3em;
-    border-radius: 0.5em;
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
     border-style: none;
 }
 
@@ -120,6 +123,10 @@ header nav ul li a:hover{
     background: orange;
     border: orange;
     cursor: pointer;
+}
+
+.sobreposta_bullets {
+    padding: 40px;
 }
 
 .sobreposta_bullets label {
@@ -143,8 +150,9 @@ header nav ul li a:hover{
 }
 
 section .paragraph h2 {
-    margin: 0.5em 3rem 0 3rem;
+    margin: 0;
     width: 7em;
+    text-transform: uppercase;
 }
 
 section .paragraph h2 hr{
@@ -156,8 +164,8 @@ section .paragraph h2 hr{
 }
 
 section .paragraph p {
-    margin-left: 3rem;
-    width: 22.5em;
+    max-width: 50vw;
+    font-size: 1.2em;
 }
 
 article {
@@ -170,15 +178,165 @@ section .paragraph {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0;
+    padding: 0 20px;
 }
 
-article img {
-    width: 22em;
-    border-radius: 1em;
-    height: auto;
-    box-shadow: 1px 1px 10px black;
-    margin: 1em;
+/*modal da tela inicial*/
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.modal .mod1 {
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, transparent, black), url(./Assets/Img/desk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal .mod2 {
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, transparent, black), url(./Assets/Img/desk2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal .mod3 {
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, transparent, black), url(./Assets/Img/desk3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal a p {
+    margin: 110px 0 0 20px;
+    color: #fff;
+}
+
+/*popup do modal*/
+
+.popup {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    width: 500px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 67%);
+    transition: 0.5s;
+    border-radius: 10px;
+    visibility: hidden;
+    padding: 45px;
+}
+
+.popup.active {
+    visibility: visible;
+    top: 50%;
+}
+
+.popup .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.popup .content h3 {
+    text-transform: uppercase;
+}
+
+.popup .content .tittle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+
+.popup hr {
+    margin-left: 0;
+    width: 20%;
+    height: 2px;
+    background: orange;
+    border: none;
+    position: absolute;
+    top: 75px;
+}
+
+.close {
+    position: absolute;
+    top: 23px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.close img {
+    max-width: 20px;
+}
+
+/*imagens dos modais no popup*/
+
+#popup1 .imgProjeto {
+    background: url(./Assets/Img/desk.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#popup2 .imgProjeto {
+    background: url(./Assets/Img/desk2.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#popup3 .imgProjeto {
+    background: url(./Assets/Img/desk3.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*botão ver mais (talvez não precise depois)*/
+
+.verMais {
+    text-align: center;
+}
+
+.verMais a {
+    text-decoration: none;
+    color: black;
 }
 
 article + p {
@@ -202,6 +360,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 footer p {
@@ -231,10 +390,188 @@ footer ul li a i{
     font-size:1.5em;
 }
 
+/*media queries*/
 
-@media only screen and (max-width: 1270px) {
-    article {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .menu-section .menu {
+        display: none;
+    }
+
+    /*menu responsivo*/
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+    }
+
+    .one,
+    .two
+    .three {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    /*fullscreen*/
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        z-index: 10000;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        transition: 0.5s;
+    }
+
+    .menu-section.on ul {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 17px;
+        top: 10px;
+        padding: 0;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(6px, 7.2px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(5px, -6.8px);
+    } 
+
+    .menu-section.on ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on ul {
+        transition-duration: 0.5s;
+        font-size: 1.2em;
+        line-height: 3em;
+        display: block;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+        padding: 10px 17px;
+    }
+
+    .modal {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+    section .paragraph {
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    section .paragraph p {
+        font-size: 1em;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 652px) {
+    .sobreposta_textos p {
+        font-size: 1.2em
+    }
+
+    section .paragraph h2 {
+        font-size: 1.3em;
+    }
+
+    .popup {
+        width: 350px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .sobreposta_textos h1 {
+        font-size: 2em;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sobreposta_textos p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 425px) {
+    .popup {
+        max-width: 320px;
+        padding: 30px;
+    }
+
+    .popup .content p {
+        font-size: 13px;
+    }
+
+    .popup .content h3 {
+        text-transform: uppercase;
+    }
+
+    .popup h2 {
+        font-size: 20px;
+    }
+
+    #popup1 .imgProjeto {
+        width: 80px;
+        height: 80px;
+    }
+
+    #popup2 .imgProjeto {
+        width: 80px;
+        height: 80px;
+    }
+
+    #popup3 .imgProjeto {
+        width: 80px;
+        height: 80px;
+    }
+
+    .close {
+        top: 15px;
+        right: 15px;
+    }
+
+    .close img {
+        max-width: 17px;
+    }
+
+    .popup hr {
+        top: 62px;
+    }
+}
+
+@media (max-width: 390px) {
+    .popup {
+        max-width: 250px;
     }
 }

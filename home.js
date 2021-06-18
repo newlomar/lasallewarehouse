@@ -55,3 +55,34 @@ arrow_right.addEventListener('click', function() {
     mudarContagemDireita();
     mudarSlideAndRadio('direita');
 });
+
+/*menu responsivo*/
+
+let show = true;
+
+const menuSection = document.querySelector('.menu-section')
+const menuToggle = menuSection.querySelector('.menu-toggle')
+
+menuToggle.addEventListener('click', () => {
+  document.body.style.overflow = show ? 'hidden' : 'initial'
+
+  menuSection.classList.toggle('on', show)
+  show = !show;
+})
+
+/*modal*/
+
+function popupToggle1() {
+    const popup = document.getElementById('popup1');
+    popup.classList.toggle('active')
+}
+
+function popupToggle2() {
+    const popup = document.getElementById('popup2');
+    popup.classList.toggle('active')
+}
+
+function popupToggle3() {
+    const popup = document.getElementById('popup3');
+    popup.classList.toggle('active')
+}

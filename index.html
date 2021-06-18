@@ -10,18 +10,17 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="./Templates/Equipe/equipe.html">Equipe</a>
-                </li>
-                <li>
-                    <a href="./Templates/Sobre/sobre.html">Sobre</a>
-                </li>
+        <nav class="menu-section">
+            <ul class="menu">
+                <li class="menuItens"><a href="#">Home</a></li>
+                <li class="menuItens"><a href="./Templates/Equipe/equipe.html">Equipe</a></li>
+                <li class="menuItens"><a href="./Templates/Sobre/sobre.html">Sobre</a></li>
             </ul>
+            <div class="menu-toggle" class="active">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
         </nav>
     </header>
 
@@ -52,13 +51,62 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem impedit neque eos odio! Est praesentium aliquam atque! Ex, doloribus non voluptatum reprehenderit, nisi nesciunt consequatur perspiciatis dolorum ratione cupiditate eos!
             </p>
         </article>
-        <article>
-            <a href="#"><img src="./Assets/Img/desk3.png" alt=""></a>
-            <a href="#"><img src="./Assets/Img/desk2.png" alt=""></a>
-            <a href="#"><img src="./Assets/Img/desk.png" alt=""></a>
-        </article>
+        
+        <div class="modal">
+           <a class="mod1" onclick="popupToggle1();"><p>Lorem Ipsum</p></a>
+           <a class="mod2" onclick="popupToggle2();"><p>Lorem Ipsum</p></a>
+           <a class="mod3" onclick="popupToggle3();"><p>Lorem Ipsum</p></a>
+        </div>
+
+        <div id="popup1" class="popup">
+            <div class="content">
+                <div class="tittle">
+                    <h2>Lorem Ipsum</h2>
+                    <hr>
+                    <div class="imgProjeto"></div>
+                </div>
+                
+                <h3>Sobre esse projeto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quod dolore dolor cumque nam minima unde, quaerat ea, repudiandae corporis aperiam. Dolor ratione deserunt ullam incidunt fugiat, quisquam ab illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae nam sequi repudiandae illum aperiam tempora impedit sit, temporibus nisi hic dolorem ab reprehenderit odio perspiciatis laborum? Impedit, consequatur incidunt.</p>
+                <h3>Integrantes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <a class="close" onclick="popupToggle1();"><img src="./Assets/Img/close.png"></a>
+        </div>
+
+        <div id="popup2" class="popup">
+            <div class="content">
+                <div class="tittle">
+                    <h2>Lorem Ipsum</h2>
+                    <hr>
+                    <div class="imgProjeto"></div>
+                </div>
+                
+                <h3>Sobre esse projeto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quod dolore dolor cumque nam minima unde, quaerat ea, repudiandae corporis aperiam. Dolor ratione deserunt ullam incidunt fugiat, quisquam ab illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae nam sequi repudiandae illum aperiam tempora impedit sit, temporibus nisi hic dolorem ab reprehenderit odio perspiciatis laborum? Impedit, consequatur incidunt.</p>
+                <h3>Integrantes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <a class="close" onclick="popupToggle2();"><img src="./Assets/Img/close.png"></a>
+        </div>
+
+        <div id="popup3" class="popup">
+            <div class="content">
+                <div class="tittle">
+                    <h2>Lorem Ipsum</h2>
+                    <hr>
+                    <div class="imgProjeto"></div>
+                </div>
+                
+                <h3>Sobre esse projeto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quod dolore dolor cumque nam minima unde, quaerat ea, repudiandae corporis aperiam. Dolor ratione deserunt ullam incidunt fugiat, quisquam ab illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae nam sequi repudiandae illum aperiam tempora impedit sit, temporibus nisi hic dolorem ab reprehenderit odio perspiciatis laborum? Impedit, consequatur incidunt.</p>
+                <h3>Integrantes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <a class="close" onclick="popupToggle3();"><img src="./Assets/Img/close.png"></a>
+        </div>
     
-        <p><a href="#">VER MAIS &rarr;</a></p>
+        <p class="verMais"><a href="#">VER MAIS &rarr;</a></p>
     
     </section>
     
