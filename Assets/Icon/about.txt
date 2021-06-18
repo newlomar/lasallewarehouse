@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Nokora
+- Font Author: Digitized data copyright  2007, Google Corporation. Copyright (c) 2012, Danh Hong (khmertype.blogspot.com)
+- Font Source: http://fonts.gstatic.com/s/nokora/v16/hYkIPuwgTubzaWxQOzoPovZg8Q.ttf
+- Font License: Apache License, version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
