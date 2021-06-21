@@ -137,6 +137,12 @@ footer p{
 
 /*media queries*/
 
+@media (min-width: 1024px) {
+    .textoresumo {
+        max-width: 50%;
+    }
+}
+
 @media (max-width: 768px) {
     .menu-section .menu {
         display: none;
