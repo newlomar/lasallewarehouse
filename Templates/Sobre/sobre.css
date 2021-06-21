@@ -29,6 +29,11 @@ nav ul li a{
     color: white;
 }
 
+nav ul li a:hover{
+    text-decoration: none;
+    color: orange;
+}
+
 .partesuperior{
     display:flex;
     flex-direction:column;
@@ -51,7 +56,6 @@ hr {
     font-style: normal;
     font-weight: 350;
     font-size: 18px;
-    line-height: 24px;
     text-align: center;
     padding: 30px;
 }

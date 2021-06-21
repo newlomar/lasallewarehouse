@@ -4,59 +4,46 @@ body,html{
     box-sizing: border-box;
     font-family: "Segoe UI";
 }
+
 nav{
-    position: fixed;
-    margin: 0;
-    height:70px;
     background-color: black;
     width: 100%;
-    margin-bottom:40px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 nav ul{
-    margin: 0;
     display: flex;
+    justify-content: flex-end;
+    padding: 10px 35px;
+    gap: 5em;
 }
 
-nav ul li{
-    margin: 0px 50px;
+nav ul li a{
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1em;
     color: #FFFFFF;
     list-style: none;
+    text-decoration:none;
 }
 
-a{
-    text-decoration:none;
+nav ul li a:hover{
+    text-decoration: none;
+    color: orange;
 }
 
 .partesuperior{
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin:0;
 }
-
-h1{
-    margin-top:110px;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 40px;
-}
-
 
 .linhadoh1{
     height: 0px;
-    width: 73px;
-    border: 2px solid #FF7A00;
-    margin-top:20px;
+    width: 65px;
+    border: 1px solid #FF7A00;
     background-color: #FF7A00;
 }
 
@@ -67,39 +54,29 @@ h1{
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    margin-top: 39px;
-    width: 706px;
-    height: 48px;
-    margin-bottom: 40px;
+    padding: 20px;
 }
 
 .caixaprincipal{
-    
-    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction:column;
-    margin-bottom: 40px;
 }
 
 .pessoaesquerda{
     display: flex;
-    width:600px;
-    height: 180px;
-    margin: 40px;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 
 }
 
 .pessoadireita{
     display: flex;
-    width:600px;
-    height: 180px;
-    margin: 40px;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .foto{
@@ -109,7 +86,6 @@ h1{
     border-radius:50%;
     background-size: 100%;
     background-repeat: no-repeat;
-    margin:28px;
 }
 
 .fotojp{
@@ -119,7 +95,6 @@ h1{
     border-radius:50%;
     background-size: cover;
     background-repeat: no-repeat;
-    margin:28px;
 }
 
 .fotojoy{
@@ -129,7 +104,6 @@ h1{
     border-radius:50%;
     background-size: cover;
     background-repeat: no-repeat;
-    margin:28px;
 }
 
 .fotojs{
@@ -139,7 +113,6 @@ h1{
     border-radius:50%;
     background-size: cover;
     background-repeat: no-repeat;
-    margin:28px;
 }
 
 .fotonm {
@@ -149,38 +122,30 @@ h1{
     border-radius:50%;
     background-size: cover;
     background-repeat: no-repeat;
-    margin:28px;
 }
 
 .textosfotos{
     display: flex;
     flex-direction:column;
-    width:325px;
-    height:172px;
+    padding: 10px 40px 10px 40px;
 }
 
 .textosfotos2{
     display: flex;
     flex-direction:column;
-    width:325px;
-    height:172px;
     align-items: flex-end;
+    padding: 10px 40px 10px 40px;
 }
 
-
-
 .titulofoto{
-    margin-top:10px;
     font-family: Segoe UI;
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
-    line-height: 33px;
-    width: 290px;
+    font-size: 1.5em;
+    padding-bottom: 20px;
 }
 
 .titulofoto2{
-    margin-top:10px;
     font-family: Segoe UI;
     font-style: normal;
     font-weight: 600;
@@ -188,23 +153,21 @@ h1{
     line-height: 33px;
     width: 290px;
     text-align: right;
+    padding-bottom: 20px;
 }
 
 .linha{
     height: 0px;
-    width: 42px;
+    width: 62px;
     border: 1px solid #FF7A00;
     background-color: #FF7A00;
-    margin-top:10px;
-    margin-bottom:10px;
 }
 
 .texto{
-    font-size: 18px;
-    width:321px;
-    text-align:justify;
+    font-size: 1.2em;
+    max-width: 380px;
+    padding-top: 20px;
 }
-
 
 footer{
     display: flex;
@@ -212,8 +175,7 @@ footer{
     align-items:center;
     justify-content: center;
     color: #646464;
-    height:180px;
-    margin-bottom:40px;
+    padding: 40px;
 }
 
 footer i{
@@ -240,95 +202,160 @@ footer p{
     color: #646464;
 }
 
-@media only screen and (max-width: 650px){
-    .partesuperior{
-        margin-left:2%;
-    }
-    .textoresumo{
-        width:90%;
-    }
-}
 
-@media only screen and (max-width: 592px){
-    .partesuperior{
-        margin-left:5%;
-    }
-    .textoresumo{
-        width:90%;
-    }
-    .pessoaesquerda{
-        display:inline;
-        width:45%;
-        height:500px;
-        margin-left:16%;
-        margin-bottom: 20px;
+/*media queries*/
+
+@media (max-width: 768px) {
+    .menu-section .menu {
+        display: none;
     }
 
-    .pessoadireita{
-        display:flex;
-        flex-direction:column-reverse;
-        width:45%;
-        height:390px;
-        margin-left:16%;
-    }
-}
-
-
-
-@media only screen and (max-width: 553px){
-    .partesuperior{
-        margin-left:2%;
-    }
-    .textoresumo{
-        width:90%;
-    }
-    .pessoaesquerda{
-        display:inline;
-        width:59%;
-        height:350px;
-        margin-left:16%;
+    /*menu responsivo*/
+    .one,
+    .two,
+    .three {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
     }
 
-    
-}
-
-
-@media only screen and (max-width: 425px){
-    .partesuperior{
-        margin-left:4%;
-    }
-    .textoresumo{
-        width:90%;
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
     }
 
-    .pessoaesquerda{
-        display:inline;
-        width:73%;
-        height:500px;
-        margin-left:20%;
+    .one,
+    .two
+    .three {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
     }
 
-   
-}
+    /*fullscreen*/
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        z-index: 10000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    }
 
-@media only screen and (max-width: 375px){
-    .partesuperior{
-        margin-left:3%;
+    .menu-section.on ul {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 17px;
+        top: 10px;
+        padding: 0;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(6px, 7.2px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(5px, -6.8px);
     } 
 
-    .textoresumo, .texto{
-        width:90%;
+    .menu-section.on ul {
+        transition-duration: 0.5s;
+        font-size: 1.2em;
+        line-height: 3em;
+        display: block;
     }
 
-    .pessoaesquerda{
-        display:inline;
-        width:75%;
-        height:500px;
-        margin-left:20%;
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+        padding: 10px 17px;
     }
+}
 
-    nav ul{
-        margin-left:10px;
+@media (max-width: 700px) {
+    .pessoaesquerda {
+        flex-direction: column;
     }
+    .pessoadireita {
+        flex-direction: column-reverse;
+    }
+    .textosfotos {
+        align-items: center;
+        text-align: center;
+    }
+    .textosfotos2 {
+        align-items: center;
+        text-align: center;
+    }
+    .titulofoto2 {
+        text-align: center;
+    }
+    .textoresumo {
+        padding: 20px 20px 0 20px;
+    }
+    .titulofoto {
+        padding: 15px 0 25px;
+    }
+    .titulofoto2 {
+        padding: 20px 0 25px 0;
+    }
+}
 
+@media (max-width: 425px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .titulofoto {
+        padding: 0 0 25px;
+    }
+    .titulofoto2 {
+        padding: 0 0 25px;
+    }
+    .texto {
+        padding: 20px;
+    }
+    .textosfotos {
+        padding: 25px 0 25px 0;
+    }
+    .textosfotos2 {
+        padding: 25px 0 25px 0;
+    }
+    .pessoadireita {
+        padding: 20px 0 0 0;
+    }
+    .pessoaesquerda {
+        padding: 20px 0 0 0;
+    }
+    .fotojp {
+        width: 100px;
+        height: 100px;
+    }
+    .fotojoy {
+        width: 100px;
+        height: 100px;
+    }
+    .fotojs {
+        width: 100px;
+        height: 100px;
+    }
+    .fotonm {
+        width: 100px;
+        height: 100px;
+    }
 }
