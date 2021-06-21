@@ -68,21 +68,35 @@ menuToggle.addEventListener('click', () => {
 
     menuSection.classList.toggle('on', show)
     show = !show;
+
 })
 
 /*modal*/
 
+
 function popupToggle1() {
     const popup = document.getElementById('popup1');
-    popup.classList.toggle('active')
+    popup.classList.toggle('active');
+
+    /* para deixar o fundo escurecido */
+    const escuro = document.getElementById('escuro');
+    escuro.classList.toggle('visible');
 }
 
 function popupToggle2() {
     const popup = document.getElementById('popup2');
-    popup.classList.toggle('active')
+    popup.classList.toggle('active');
+
+    /* para deixar o fundo escurecido */
+    const escuro = document.getElementById('escuro');
+    escuro.classList.toggle('visible');
 }
 
 function popupToggle3() {
     const popup = document.getElementById('popup3');
-    popup.classList.toggle('active')
+    popup.classList.toggle('active');
+
+    /* para deixar o fundo escurecido */
+    const escuro = document.getElementById('escuro');
+    escuro.classList.toggle('visible');
 }
