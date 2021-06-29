@@ -6,6 +6,7 @@ const radio_0 = document.getElementById('radio_0');
 const radio_1 = document.getElementById('radio_1');
 const radio_2 = document.getElementById('radio_2');
 const intro = document.getElementById('intro');
+let tempSlider;
 
 function mudarContagemEsquerda() {
     if (contagem === 0) {
@@ -25,7 +26,7 @@ function mudarContagemDireita() {
     }
 }
 
-function mudarSlideAndRadio(direcao) {
+function mudarSlideAndRadio() {
     if (contagem === 0) {
         radio_1.className = 'inactive';
         radio_2.className = 'inactive';
@@ -48,13 +49,27 @@ function mudarSlideAndRadio(direcao) {
 
 arrow_left.addEventListener('click', function() {
     mudarContagemEsquerda();
-    mudarSlideAndRadio('esquerda');
+    mudarSlideAndRadio();
 });
 
 arrow_right.addEventListener('click', function() {
     mudarContagemDireita();
-    mudarSlideAndRadio('direita');
+    mudarSlideAndRadio();
 });
+
+
+function iniciarSlider() {
+    tempSlider = setInterval(() => {
+        mudarContagemDireita();
+        mudarSlideAndRadio();
+    }, 2000);
+}
+
+function parar() {
+    clearInterval(tempSlider);
+}
+
+iniciarSlider();
 
 /*menu responsivo*/
 

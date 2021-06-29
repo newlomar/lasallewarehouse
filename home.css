@@ -54,7 +54,9 @@ header nav ul li a:hover{
     max-width: 100%;
     background-size: cover;
     background-position: center;
+    transition: opacity 1s ease-in-out;
 }
+
 
 #intro .sobreposta .arrow-left {
     position: absolute;
