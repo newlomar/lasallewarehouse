@@ -115,3 +115,7 @@ function popupToggle3() {
     const escuro = document.getElementById('escuro');
     escuro.classList.toggle('visible');
 }
+
+/*Testando Scroll Suave em JS (jp)*/
+
+const cliquebotao = document.querySelector('.intro a button')

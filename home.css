@@ -127,6 +127,7 @@ header nav ul li a:hover{
     height: 40px;
     border-radius: 2px;
     border-style: none;
+  
 }
 
 .sobreposta button:hover {
@@ -213,6 +214,11 @@ section .paragraph {
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.modal .mod1:hover {
+    transform: scale(1.08);
 }
 
 .modal .mod2 {
@@ -225,6 +231,11 @@ section .paragraph {
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.modal .mod2:hover {
+    transform: scale(1.08);
 }
 
 .modal .mod3 {
@@ -237,8 +248,12 @@ section .paragraph {
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 0.5s;
 }
 
+.modal .mod3:hover {
+    transform: scale(1.08);
+}
 .modal a p {
     margin: 110px 0 0 20px;
     color: #fff;
