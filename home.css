@@ -127,7 +127,7 @@ header nav ul li a:hover{
     height: 40px;
     border-radius: 2px;
     border-style: none;
-  
+    transition: 0.5s;
 }
 
 .sobreposta button:hover {
@@ -162,13 +162,13 @@ header nav ul li a:hover{
 
 section .paragraph h2 {
     margin: 0;
-    width: 7em;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
 section .paragraph h2 hr{
     margin-left: 0;
-    width: 30%;
+    width: 70px;
     height: 2px;
     background: orange;
     border: none;
@@ -310,7 +310,7 @@ section .paragraph {
     background: orange;
     border: none;
     position: absolute;
-    top: 75px;
+    top: 75%;
 }
 
 .close {
@@ -518,6 +518,7 @@ footer ul li a i{
         align-items: center;
         text-align: center;
         padding: 0;
+        margin: 25px;
     }
 
     section .paragraph p {
@@ -527,6 +528,32 @@ footer ul li a i{
 
     section .paragraph h2 hr {
         margin-left: auto;
+    }
+
+    #popup1 .imgProjeto {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+
+    #popup2 .imgProjeto {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+
+    #popup3 .imgProjeto {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+
+    .popup .content h3 {
+        font-size: 1em;
+    }
+
+    .popup .content h2 {
+        font-size: 1em;
     }
 }
 
@@ -555,39 +582,20 @@ footer ul li a i{
     .sobreposta_textos p {
         font-size: 0.9em;
     }
+
+    .modal {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 425px) {
     .popup {
         max-width: 320px;
-        padding: 30px;
+        padding: 20px;
     }
 
     .popup .content p {
         font-size: 13px;
-    }
-
-    .popup .content h3 {
-        text-transform: uppercase;
-    }
-
-    .popup h2 {
-        font-size: 20px;
-    }
-
-    #popup1 .imgProjeto {
-        width: 80px;
-        height: 80px;
-    }
-
-    #popup2 .imgProjeto {
-        width: 80px;
-        height: 80px;
-    }
-
-    #popup3 .imgProjeto {
-        width: 80px;
-        height: 80px;
     }
 
     .close {
@@ -599,14 +607,19 @@ footer ul li a i{
         max-width: 17px;
     }
 
-    .popup hr {
-        top: 62px;
-    }
 }
 
 @media (max-width: 390px) {
     .popup {
         max-width: 250px;
+    }
+
+    #popup1 .imgProjeto {
+        height: 45px
+    }
+
+    #popup3 .imgProjeto {
+        height: 45px
     }
 }
 

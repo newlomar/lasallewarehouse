@@ -281,6 +281,7 @@ footer p{
         font-size: 1.2em;
         line-height: 3em;
         display: block;
+        text-align: center;
     }
 
     .menu-toggle {
